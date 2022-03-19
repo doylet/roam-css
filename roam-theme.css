@@ -1,0 +1,177 @@
+/* Editor */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+* {
+    --color-cyan: #21B8E8;
+    --color-blue: #338CCD;
+    --color-tan: #E4CEB4;
+    --color-light-orange: #FFC684;
+    --color-orange: #E87421;
+    --color-dark-orange: #C1632F;
+  	--color-white: #FFF;
+    --color-gray-020: #FBFBFB;
+    --color-gray-050: #F3F3F3;
+    --color-gray-100: #EEEEEE;
+    --color-gray-300: #D1DEDE;
+    --color-gray-500: #8B9999;
+    --color-gray-700: #616D6D;
+    --color-gray-900: #39474B;
+    --color-warning: #B33A3A;
+    --color-primary: #2D78E1;
+    --text-default: hsl(204,20%,45%);
+    --link-defualt: #337ab7;
+}
+
+/* Layout */
+.roam-body .roam-app .roam-main .roam-article {
+  width: 50hv;
+  padding: 0px 0px 1em 0px !important;
+  margin: 1em 1em 0px 1em;
+}
+
+body, #right-sidebar {
+  background: var(--color-gray-020);
+}
+
+.roam-log-page {
+  border-top: none !important;
+  background: var(--color-white);
+  padding: 0px 16px 42px 16px !important;
+  margin: none !important;
+  border-radius: 24px;
+}
+
+.rm-sidebar-outline-wrapper {
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: 16px;
+}
+
+.rm-sidebar-window {
+  border-bottom: none !important;
+  padding-bottom: 8px;
+}
+
+code {
+  color: var(--color-warning);
+}
+
+.rm-reference-item {
+  border-radius: calc(1em/2);
+}
+
+.rm-encrypted-block {
+  font-size: 1em;
+}
+
+/* tag */
+.rm-page-ref--tag {
+    padding: 1px 6px;
+    margin: 6px 0px;
+    /*background: #2D78E1;*/
+    background: none;
+    color: #2D78E1;
+    border-radius: 6px;
+    border: 1px solid #2D78E1;
+    font-size: 0.9rem;
+  }
+
+  /* headers */
+  
+  .rm-title-display, .rm-title-editing-display, .rm-title-textarea {
+    font-family: 'Noto Sans', Sans-Serif;
+    font-weight: Bold;
+  }
+  
+  .rm-level1, .rm-heading-level-1>.rm-block__self .rm-block__input{
+    font-weight: 800;
+    font-size: 1.4em;
+  }
+  
+  .rm-level2, .rm-heading-level-2>.rm-block__self .rm-block__input{
+    font-weight: 800;
+    font-size: 1.1em;
+  }
+  
+  .rm-level3, .rm-heading-level-3>.rm-block__self .rm-block__input{
+    font-weight: 600;
+    font-size: 1em;
+    color: black !important;
+  }
+  
+  .rm-level3, .rm-heading-level-3>.rm-block__self .rm-block__input {
+    color: #1F2937;
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  
+  .rm-level3, .rm-heading-level-3>.rm-block__self .rm-block__input > span::before {
+    content: "\2003";
+  }
+  .rm-heading-level-3>.rm-block__self .rm-block__input + .rm-block-input dont-unfocus-block rm-block__input rm-block__input--active rm-block-text {
+    content: "\2003";
+  }
+  .roam-block-container.rm-block.rm-heading-level-3 {
+    margin: 1rem 0;
+  }
+
+  /* table alignment */
+.roam-table td {
+    vertical-align: top;
+  }
+
+/* blockquote style */
+.rm-bq {
+    border-left: medium solid var(--color-gray-700);
+    border-left: 0px solid #eee;
+    border-radius: calc(1em/2);
+    background: var(--color-gray-020);
+    quotes: '""';
+    padding: 1em;
+  }
+
+  .rm-bq:before {
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }  
+
+  /* sidebar-content */
+  .roam-body .roam-app .roam-sidebar-container {
+    background-color: var(--color-white);
+    border: 0px 1px 0px 0px solid var(--color-gray-700);
+  }
+
+  /* sidebar-content-hover */
+  .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+    background-color: var(--color-gray-050);
+    color: var(--text-default);
+  }
+  
+  .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+    background-color: var(--color-gray-050);
+    color: var(--text-default);
+  }
+  
+  .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+    background-color: var(--color-gray-050);
+    color: var(--text-default);
+  }
+  
+  #roam-sidebar-logo:hover {
+    background-color: var(--color-gray-050);
+    color: var(--text-default);
+    text-decoration: none;
+  }
+  
+  #roam-sidebar-logo a {
+    color: var(--link-default);
+  }
+  
+  #app > div > div > div.roam-sidebar-container.noselect > div > div.flex-v-box.starred-pages-wrapper > div:nth-child(1) {
+    display: none;
+  }
